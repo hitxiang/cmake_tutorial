@@ -1,0 +1,4 @@
+From http://johnlamp.net/cmake-tutorial-4-libraries-and-subdirectories.html
+
+Changes
+1, make gmock as part of project
