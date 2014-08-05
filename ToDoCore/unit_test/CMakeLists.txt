@@ -1,6 +1,3 @@
-set(GMOCK_DIR "$ENV{GMOCK_HOME}"
-    CACHE PATH "The path to the GoogleMock test framework.")
-
 if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
     # force this option to ON so that Google Test will use /MD instead of /MT
     # /MD is now the default for Visual Studio, so it should be our default, too
