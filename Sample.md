@@ -18,6 +18,7 @@ include_directories(${GMOCK_HOME}/include ${GMOCK_HOME}/gtest/include)
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
 #add_definitions(-std=c++0x)
+#set(warnings "-Wall -Wextra -Werror -fprofile-arcs -ftest-coverage")
 set(warnings "-Wall -Wextra -Werror")
 set(CMAKE_CXX_FLAGS "${warnings}")
 set(CMAKE_C_FLAGS   "${warnings}")
