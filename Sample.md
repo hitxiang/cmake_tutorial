@@ -1,3 +1,7 @@
+```
+mkdir _build && cd _build && cmake .. && make && make test
+```
+
 ==== CMakeLists.txt at top ====
 ```
 project(AAAA_test)
