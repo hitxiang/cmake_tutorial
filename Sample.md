@@ -1,4 +1,5 @@
 ==== CMakeLists.txt at top ====
+```
 project(AAAA_test)
 cmake_minimum_required(VERSION 2.6)
 
@@ -19,20 +20,25 @@ set(CMAKE_C_FLAGS   "${warnings}")
 
 add_subdirectory(util/unit_test)
 add_subdirectory(lib/unit_test)
+```
 
 ==== CMakeLists.txt in util/unit_test ====
+```
 add_executable(UtilTest
     atl_string_test.cpp "../atl_string.c")
 target_link_libraries(UtilTest gtest_main)
 
 add_test(NAME UtilTest
          COMMAND UtilTest "--gtest_output=xml:util_report.xml")
+```
 
 
 ==== CMakeLists.txt in lib/unit_test ====
+```
 add_executable(LibTest
     atl_zlib_test.cpp)
 target_link_libraries(LibTest gtest_main)
 
 add_test(NAME LibTest
          COMMAND LibTest "--gtest_output=xml:lib_report.xml")
+```
